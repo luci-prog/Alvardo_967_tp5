@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+       <meta charset="utf-8">
+       <title>Liga de fútbol profesional</title>
+       <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+       
+ </head>
+ 
+ <body>
+ 
+    
+    <div id="contenedor">
+         
+         <header><h1>Liga de fútbol profesional</h1></header>
+         
+         <nav>
+              <ul>
+                  
+                  <li><a href="index.html">Home</a></li> 
+                  <li><a href="fixture.html">Fixture y resultados</a></li>
+                  <li><a href="equipos.html">Equipos</a></li>
+              </ul>
+              <div id="welcome">
+                 <h4 th:text=" 'Bienvenido!' +${usuario}"></h4>
+              </div>
+         </nav>
+        
+         <section id="contenido">
+               <h2>Noticias</h2>  
+                  <table>                          
+                    <tr class="borde">                       
+                       <td class="bordertd">    
+                          <img  alt="imagen usando quote" src="img/Neymar.jpg">
+                          <p>
+                             &quot;10/05/2020-FÚTBOL<br>
+                             Neymar no acepta rebaja salarial en PSG para presionar su salida al Barcelona
+                          </p>
+                       </td>  
+                       
+                       <td class="bordertd">
+                           <img  alt="imagen usando quote" src="img/Riquelme boca.jpg">
+                           <p>
+                             &quot;10/05/2020-FÚTBOL<br>
+                             A seis años de la despedida de Riquelme en Boca
+                           </p>
+                       </td>
+                       
+                       <td class="bordertd">
+                         <img  alt="imagen usando quote" src="img/motivacion.jpg">
+                         <p>
+                            &quot;10/05/2020-PANDEMIA<br>
+                            Motivación y resiliencia: desafíos de la psicología con los futbolistas en aislamiento
+                         </p>
+                       </td>                                      
+                    </tr>     
+                </table>
+         
+         </section>
+         
+         
+         <aside>
+             <h2>Auspiciantes</h2>
+         </aside>
+         
+         <footer>
+                 <h3>
+                      Avda. Pedro Ortiz de Zarate N° 455-Tel388 4789555
+                 </h3>
+
+         </footer>
+   
+   </div>
+ </body>
+ </html>
